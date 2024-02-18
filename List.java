@@ -42,6 +42,7 @@ public class List {
        String ans = "";
        while (current != null){
             ans += current.cp.toString();
+            System.out.println(current.cp.toString());
             current = current.next;
         }
         return ans;
