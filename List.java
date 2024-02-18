@@ -38,19 +38,19 @@ public class List {
     
     /** GIVE Textual representation of this list. */
     public String toString() {
-            Node current = first;
-            StringBuilder ans = new StringBuilder();
-            while (current != null) {
-                ans.append(current.cp.toString()).append(" ");
-                current = current.next;
-            }
-            return ans.toString().trim();  // Trim to remove the trailing space
+       Node current = first;
+       String ans = "";
+       while (current != null){
+            ans += current.cp.toString() + " ";
+            System.out.print(current.cp.toString());
+            current = current.next;
         }
+        return ans;
+    }
 
-
-        /** Returns the index of the first CharData object in this list
-         *  that has the same chr value as the given char,
-         *  or -1 if there is no such object in this list. */
+    /** Returns the index of the first CharData object in this list
+     *  that has the same chr value as the given char,
+     *  or -1 if there is no such object in this list. */
     public int indexOf(char chr) {
         Node current = first;
         int index = 0;
