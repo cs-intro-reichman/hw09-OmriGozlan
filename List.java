@@ -39,11 +39,11 @@ public class List {
     /** GIVE Textual representation of this list. */
     public String toString() {
         ListIterator itr = new ListIterator(first);
-        String ans = "";
+        String res = "";
         while (itr.hasNext()){
-            ans += itr.next().toString();
+            res += itr.next().toString();
         }
-        return ans;
+        return res;
     }
 
     /** Returns the index of the first CharData object in this list
