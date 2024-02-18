@@ -29,8 +29,8 @@ public class List {
 
     /** GIVE Adds a CharData object with the given character to the beginning of this list. */
     public void addFirst(char chr) {
-        CharData newC = new CharData(chr);
-        Node newNode = new Node(newC);
+        CharData charD = new CharData(chr);
+        Node newNode = new Node(charD);
         newNode.next = first;
         first = newNode;
         size++;
