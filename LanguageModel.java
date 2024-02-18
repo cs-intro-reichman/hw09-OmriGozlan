@@ -96,7 +96,7 @@ public class LanguageModel {
 	}
 
     /**
-	 * Generates a random text, based on the probabilities that were learned during training. 
+	 * Generate a random text, based on the probabilities that were learned during training.
 	 * @param initialText - text to start with. If initialText's last substring of size numberOfLetters
 	 * doesn't appear as a key in Map, we generate no text and return only the initial text. 
 	 * @param textLength - the size of text to generate

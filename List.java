@@ -64,7 +64,7 @@ public class List {
 
     /** If the given character exists in one of the CharData objects in this list,
      *  increments its counter. Otherwise, adds a new CharData object with the
-     *  given chr to the beginning of this list. */
+     *  give chr to the beginning of this list. */
     public void update(char chr) {
         int index = indexOf(chr);
         if(index == -1){
