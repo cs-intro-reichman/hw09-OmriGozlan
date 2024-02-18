@@ -38,10 +38,11 @@ public class List {
     
     /** GIVE Textual representation of this list. */
     public String toString() {
-       Node current =first;
+       Node current = first;
        String ans = "";
-        while (current != null){
+       while (current != null){
             ans += current.cp.toString();
+            current = current.next;
         }
         return ans;
     }
