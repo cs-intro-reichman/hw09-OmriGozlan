@@ -41,7 +41,7 @@ public class List {
        Node current = first;
        String ans = "";
        while (current != null){
-            System.out.print(current.cp.toString());
+            ans += current.cp.toString() + " ";
             current = current.next;
         }
         return ans;
