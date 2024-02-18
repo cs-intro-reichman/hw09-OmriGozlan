@@ -38,10 +38,10 @@ public class List {
     
     /** GIVE Textual representation of this list. */
     public String toString() {
-        ListIterator itr = new ListIterator(first);
-        String ans = "";
-        while (itr.hasNext()){
-            ans += itr.next().toString();
+       Node current =first;
+       String ans = "";
+        while (current != null){
+            ans += current.cp.toString();
         }
         return ans;
     }
