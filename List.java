@@ -39,13 +39,13 @@ public class List {
     /** GIVE Textual representation of this list. */
     public String toString() {
         Node current = first;
-        StringBuilder ans = new StringBuilder().append("(");
+        String ans = "(";
         while (current != null) {
-            ans.append(current.cp.toString());
+            ans += current.cp.toString() + " ";
             current = current.next;
         }
-        ans.append(")");
-        return ans.toString();
+        ans = ans.substring(0,ans.length()-1) + ")";
+        return ans;
     }
 
     /** Returns the index of the first CharData object in this list
