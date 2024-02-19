@@ -10,7 +10,7 @@ public class ListIterator {
         current = node;
     }
 
-    /** Checks if this iterator has more nodes to process */
+    /** Check if this iterator has more nodes to process */
     public boolean hasNext() {
         return (current != null);
     }
@@ -19,8 +19,8 @@ public class ListIterator {
      *  and advances the cursor to the next element.
      *  Should be called only if hasNext() is true. */
     public CharData next() {
-        CharData cd = current.cd;
+        CharData cp = current.cp;
         current = current.next;
-        return cd;
+        return cp;
     }
 }
