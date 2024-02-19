@@ -39,14 +39,12 @@ public class List {
     /** GIVE Textual representation of this list. */
     public String toString() {
         Node current = first;
-        StringBuilder ans = new StringBuilder().append("");
-        if (size == 0 ){
-            return "";
-        }
+        StringBuilder ans = new StringBuilder().append("(");
         while (current != null) {
             ans.append(current.cp.toString());
             current = current.next;
         }
+        ans.append(")");
         return ans.toString();
     }
 
