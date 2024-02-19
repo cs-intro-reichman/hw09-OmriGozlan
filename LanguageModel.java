@@ -103,13 +103,13 @@ public class LanguageModel {
 	 * @return the generated text
 	 */
 	public String generate(String initialText, int textLength) {
-            // Check if the initial text is shorter than the windowLength
+           int len = initialText.length();
             if (initialText.length() < windowLength) {
                 return initialText;
             }
             StringBuilder generatedText = new StringBuilder(initialText);
             String currentWindow = initialText.substring(initialText.length() - windowLength);
-            while (generatedText.length() < textLength) {
+            while (generatedText.length() -len < textLength) {
                 List charDataList = CharDataMap.get(currentWindow);
                 if (charDataList == null || charDataList.getSize() == 0) {
                     break;
